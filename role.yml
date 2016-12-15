@@ -1,0 +1,9 @@
+---
+- name: logrotate
+  hosts: all
+  user: root
+  become: true
+  roles:
+  - logrotate
+  vars_files:
+  - vars/syslog.yml

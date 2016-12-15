@@ -1,0 +1,4 @@
+---
+- name: install logrotate
+  package: name=logrotate
+           state=present

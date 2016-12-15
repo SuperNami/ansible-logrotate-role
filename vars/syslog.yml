@@ -1,0 +1,32 @@
+---
+logrotate_scripts:
+  - name: apt
+    path: /var/log/apt/*.log
+    options:
+      - weekly
+      - size 25M
+      - rotate 7
+      - missingok
+      - compress
+      - delaycompress
+      - copytruncate
+  - name: auth
+    path: /var/log/auth.log
+    options:
+      - weekly
+      - size 25M
+      - rotate 7
+      - missingok
+      - compress
+      - delaycompress
+      - copytruncate
+  - name: boot
+    path: /var/log/boot.log
+    options:
+      - weekly
+      - size 25M
+      - rotate 7
+      - missingok
+      - compress
+      - delaycompress
+      - copytruncate

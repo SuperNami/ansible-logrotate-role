@@ -1,0 +1,6 @@
+---
+- include: install/logrotate.yml
+  tags: install_logrotate
+
+- include: configure/logrotate.yml
+  tags: configure_logrotate
